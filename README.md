@@ -25,6 +25,9 @@
   #### Arquivo ormconfig.example.json
     📌 Utilize esse arquivo de configurações do banco de dados postgres, incluindo entidades e migrações
     
+  #### Gere a build do projeto com BABEL criando a pasta /dist -> aplicação criada para deploy na pasta /dist
+    📌 yarn build
+    
   #### Caso não utilize o docker-compose
     📌 Depois de subir os serviços de banco de dados postgres e redis utilize o comando node dist/shared/http/server.js
 
