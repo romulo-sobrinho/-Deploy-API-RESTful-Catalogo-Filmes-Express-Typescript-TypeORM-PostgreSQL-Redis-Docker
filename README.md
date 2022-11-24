@@ -5,50 +5,71 @@
 <hr>
 <br>
 
-
 <h2 align="center">Objetivo</h2>
 <p align="center">
   Desenvolver uma API respeitando o conceito REST implementando um CRUD para catálogo de filmes, bem como um sistema de autenticação JWT numa arquitetura MVC</p>
 <br>
 <br>
 
-
-<h2 align="center">🚧Instruções necessárias para executar o projeto🚧</h2>
+<h2 align="center">🚧Instruções necessárias para executar o projeto com docker-compose🚧</h2>
 <br>
 
-  #### Arquivo docker-compose.yml
+#### Arquivo docker-compose.yml
+
     📌 Esse arquivo construirá todos os containers de serviços necessários para aplicação como banco de dados postgres, redis e aplicação Node JS
 
-  #### Arquivo .env.example
+#### Arquivo .env.example
+
     📌 Utilize esse arquivo de variáveis de ambiente como base
-  
-  #### Arquivo ormconfig.example.json
+
+#### Arquivo ormconfig.example.json
+
     📌 Utilize esse arquivo de configurações do banco de dados postgres, incluindo entidades e migrações
-    
-  #### Gere a build do projeto com BABEL criando a pasta /dist -> aplicação criada para deploy na pasta /dist
+
+#### Gere a build do projeto com BABEL criando a pasta /dist -> aplicação criada para deploy na pasta /dist
+
     📌 yarn build
-    
-  #### Caso não utilize o docker-compose
-    📌 Depois de subir os serviços de banco de dados postgres e redis utilize o comando node dist/shared/http/server.js
 
 <br>
 <br>
 
+<h2 align="center">🚧Instruções necessárias para executar o projeto sem docker-compose🚧</h2>
+<br>
+
+#### Altere o arquivo ormconfig.json
+
+    📌 Em vez de ->  "host": "db", utilize -> "host": "localhost"
+
+#### Altere o arquivo .env
+
+    📌 Em vez de ->  REDIS_HOST=redis, utilize -> REDIS_HOST=localhost
+
+#### Gere a build do projeto com BABEL criando a pasta /dist -> aplicação criada para deploy na pasta /dist
+
+    📌 yarn build
+
+#### Depois de subir os serviços de banco de dados postgres e redis rode o projeto
+
+    📌 node dist/shared/http/server.js
+
+<br>
+<br>
 
 <h2 align="center">🚧Instruções necessárias para testar a API🚧</h2>
-<br> 
+<br>
 
-  #### API documentada com Swagger UI, utilize o seguinte endpoint para acesso a documentação da API e testes
+#### API documentada com Swagger UI, utilize o seguinte endpoint para acesso a documentação da API e testes
+
     📌 /api-docs
 
 <br>
 <br>
 
-
 <h2 align="center">🚨Tecnologias🚨</h2>
-<br> 
+<br>
 
-  #### Tecnologias utilizadas
+#### Tecnologias utilizadas
+
     ✔️ Typescript
     ✔️ Node JS
     ✔️ Express
@@ -59,12 +80,11 @@
     ✔️ PostgreSQL
 
 <br>
-<br> 
+<br>
 
-    
 <hr>
 <h2 align="center">💡Demonstração em formato .GIF💡</h2>
-<br> 
+<br>
 
 <h3 align="center">Autenticação JWT Usuário</h3>
 <br>
@@ -75,8 +95,6 @@
 ![CreateSession](https://user-images.githubusercontent.com/68918326/203686945-065227a2-6b2b-4386-9580-74662545134a.gif)
 <br>
 <br>
-
-
 
 <h3 align="center">CRUD Filmes</h3>
 <br>
@@ -109,7 +127,6 @@
 <br>
 <br>
 
-
 <h3 align="center">CRUD Usuário</h3>
 <br>
 
@@ -140,8 +157,6 @@
 ![DeleteUser](https://user-images.githubusercontent.com/68918326/203687262-36e230d6-d885-491a-8f54-2d32876df5b1.gif)
 <br>
 <br>
-
-
 
 <hr>
 <h3 align="center">🎖️PROJETO FINALIZADO🎖️</h3>
